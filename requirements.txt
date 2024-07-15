@@ -1,0 +1,12 @@
+streamlit
+langchain
+langchain-aws
+langchain-community
+python-dotenv
+boto3
+botocore
+pypdf
+faiss-cpu
+PyCryptodome
+tiktoken
+gpt4all
