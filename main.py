@@ -72,7 +72,7 @@ if (uploaded_pdffile is not None):
             chain = load_summarize_chain(llm=llm_model, chain_type='map_reduce')
             response = chain.run(pages)
 
-            st.markdown(response)
+            st.markdown(response['output_text'])
     elif action == 'Question & Answering':
         st.text('Handling the file...')
         embeddings = GPT4AllEmbeddings(model_name='all-MiniLM-L6-v2.gguf2.f16.gguf')
